@@ -17,6 +17,7 @@ The second module of the docker training series shows you how to customize `Dock
 3. With compose exec into the `flaskapp` container
 4. Start multi containers using `compose/docker-compose.yml`
 5. Add `REDIS_URL` with value `redis` Environment variable to `web` container in your compose.yml, print it in the python code and use it at line 8 for the redis connection specification.
+  - To be able to print the env var you need to import `os` package and get your env like this `os.environ["REDIS_URL"]`
   - Log the container output to see the value of the environment variable.
 6. Stop all containers associated to your composition
 7. Start all containers from the root project and then logs the containers also from root project
