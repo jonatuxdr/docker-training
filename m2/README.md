@@ -12,12 +12,13 @@ The second module of the docker training series shows you how to customize `Dock
 
 ## Exercises
 
-1. Build the `cmd/Dockerfile` with tag name `dtr2-cmd`
-2. Run the image `dtr2-cmd` in order to print `hello world` and using auto remove argument.
-3. Run the image `dtr2-cmd` in order to list the root directory
-4. Edit the `entrypoint/entrypoint.sh` and `entrypoint/Dockerfile` and build your image with tag name `dtr2-entrypoint`.
-5. Run the `dtr2-entrypoint` image with an argument and ensure it will goes through your entrypoint script.
-6. Start multi containers using `compose/docker-compose.yml`
-7. Stop all containers associated to your composition
+1. Build the `Dockerfile` with tag name `flaskapp`
+2. With compose Run the images `flaskapp` in order to see `Hello World! I have been seen x times.` and using auto remove argument.
+3. With compose exec into the `flaskapp` container
+4. Start multi containers using `compose/docker-compose.yml`
+5. Add an Environment variable to `web` container in your compose.yml and print it in the python code.
+  - Log the container output to see the value of the environment variable.
+6. Stop all containers associated to your composition
+7. Start all containers from the root project and then logs the containers also from root project
 8. Purge all containers associated to your composition
 

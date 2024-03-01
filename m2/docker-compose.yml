@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    ports:
+      - "3500:5000"
+    environment:
+      - REDIS_URL=redis
+
+  redis:
+    image: "redis:alpine"
